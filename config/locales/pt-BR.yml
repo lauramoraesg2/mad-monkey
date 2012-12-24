@@ -239,6 +239,33 @@ pt-BR:
               blank: "não foi selecionada"
 
 
+    models:
+      admin_user: "Administrador"
+      category: "Categoria"
+
+      city: "Cidade"
+      state: "Estado"
+      user: "Usuário"
+      product: "Produto"
+
+    atributes:
+      admin_user:
+        id: "Id"
+        email: "Email"
+        name: "Nome"
+        password: "Senha"
+        password_confirmation: "Confirmar Senha"
+        change_your_password: "Alterar Senha"
+        remember_me: "Lembrar meus dados"
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
+      category:
+        id: "Id"
+        name: "Nome"
+        description: "Descrição"
+        main_image: "Ícone da categoria"
+
+
   active_admin:
     dashboard: "Painel Administrativo"
     dashboard_welcome:
@@ -294,100 +321,3 @@ pt-BR:
       inactive: "Inativos"
       super_users: "Super Adminstradores"
       normal_users: "Lojas"
-
-
-    models:
-      admin_user: "Administrador"
-      category: "Categoria"
-
-      city: "Cidade"
-      state: "Estado"
-      user: "Usuário"
-      product: "Produto"
-
-    attributes:
-      admin_user:
-        id: "Id"
-        email: "Email"
-        name: "Nome"
-        password: "Senha"
-        password_confirmation: "Confirmar Senha"
-        change_your_password: "Alterar Senha"
-        remember_me: "Lembrar meus dados"
-        created_at: "Cadastrado Em"
-        updated_at: "Atualizado Em"
-      category:
-        id: "Id"
-        name: "Nome"
-        description: "Descrição"
-        main_image: "Ícone da categoria"
-
-
-      city:
-        id: "Id"
-        slug: "Slug"
-        name: "Nome"
-        state: "Estado"
-        created_at: "Cadastrado Em"
-        updated_at: "Atualizado Em"
-      product:
-        id: "Id"
-        name: "Nome"
-        description: "Descrição"
-        value: "Valor"
-        discount_value: "Valor Com Desconto"
-        main_image: "Imagem Do Produto"
-        button_text: "Texto Do Botão De Compra"
-        button_url: "Link Do Botão"
-        value_default: "Preço Padrão Do Produto"
-        value_cities: "Preço Especifico Da Cidade(s)"
-        custom_price: "Preço Para As Cidades Selecionadas"
-        review_products: "Itens Para Avaliação"
-        cities: "Cidades"
-        available_cities:  "Cidades em que está disponível"
-        states: "Estados em que está disponível"
-        button_text_hint: "Texto apresentado no botão de compra da página do produto."
-        button_url_hint: "Link para direcionamento quando do botão descrito acima."
-        main_image_hint: "A imagem será redimensionada para os tamanhos (514 × 185px e 710 × 300px)"
-        error_discount: "O valor do desconto não deve ser maior que o valor normal."
-        different_values: "Valores Diferenciados"
-        evaluation_items: "Itens Para Avaliação"
-        created_at: "Cadastrado Em"
-        updated_at: "Atualizado Em"
-
-
-
-
-  product:
-    index:
-      menu_home: "Home"
-      menu_products: "Celular"
-      menu_list: "Lista de Produtos"
-      title: "Produtos"
-      image_click: "Veja Mais Detalhes"
-      old_price: "de: "
-      new_price: "por: "
-    show:
-      menu_home: "Home"
-      menu_products: "Pré-Pago"
-      menu_product_information: "Informações do produto"
-      old_price: "de: "
-      new_price: "por: "
-      description: "Descrição: "
-      wall_comment: "Comente no mural:"
-      rating: "Avaliações dos usuários"
-      evaluated: "pessoas avaliaram este produto!"
-      write_review: "Escreva uma avaliação!"
-      evaluation_question: "O QUE ACHA DESTE PRODUTO?"
-      write_comment: "Comentários:"
-      load_more: "Carregar mais"
-      submit_review: "Enviar comentário ›"
-      has_review: "Você já avaliou este produto."
-
-      itens_review:
-        without_itens: "Nenhum item para avaliação!"
-      view_custom_values:
-        without_custom_values: "Não há valores diferentes para outras cidades!"
-        cities: "Cidade"
-        normal_price: "Preço Normal"
-        discounted_price: "Preço c/ Desconto"

@@ -14,7 +14,7 @@ ActiveAdmin.register Category do
       row :name
       row :description
       row :main_image do
-        image_tag(category.main_image.url(:thumb))
+        image_tag(category.main_image.url(:icon))
       end
       row :created_at
       row :updated_at
@@ -22,7 +22,7 @@ ActiveAdmin.register Category do
   end
 
   form do |f|
-    f.inputs "Categories" do
+    f.inputs I18n.t("activerecord.models.category"), :multipart => true do
         f.input :name
         f.input :description, :as => :text, :input_html => {:rows => 4}
         f.input :main_image

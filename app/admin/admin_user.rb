@@ -18,7 +18,7 @@ ActiveAdmin.register AdminUser do
   end
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs I18n.t("activerecord.models.admin_user"), :multipart => true do
       if f.object.new_record?
         f.input :email
         f.input :password

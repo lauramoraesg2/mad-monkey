@@ -13,11 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/config/database.yml
-/public/assets
 
 #IDE
 .idea
-.idea/mad-monkey.iml
-.idea/workspace.xml
 *.ids
+
+#DATABASE
+/config/database.yml
+
+/public/assets/
