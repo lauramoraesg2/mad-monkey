@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 gem 'paperclip'
 
+gem 'rack-p3p'
 
 # Gems used only for assets and not required
 # in production environments by default.
