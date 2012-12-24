@@ -3,6 +3,8 @@
 
 # encoding: UTF-8
 # pt-BR translations for Ruby on Rails
+
+#TODO: NÃO ESTÁ PEGANDO AS TRADUÇÕES
 pt-BR:
   # formatos de data e hora
   date:
@@ -237,60 +239,6 @@ pt-BR:
               blank: "não foi selecionada"
 
 
-    models:
-      offers_cities: "Selecione os estados e/ou as cidades em que esta oferta estará disponível. <i>OBS: Caso não tenha nenhum estado ou cidade selecionados será considerada válida para todas as regiões.</i>"
-      chosen_states_multiple: "Selecione os estados"
-      chosen_cities: "Selecione as cidades"
-      chosen_states: "Selecione um estado"
-      city: "Cidade"
-      state: "Estado"
-      user: "Usuário"
-      admin_user: "Administrador"
-      product: "Produto"
-    attributes:
-      city:
-        id: "Id"
-        slug: "Slug"
-        name: "Nome"
-        state: "Estado"
-        created_at: "Cadastrado Em"
-        updated_at: "Atualizado Em"
-      product:
-        id: "Id"
-        name: "Nome"
-        description: "Descrição"
-        value: "Valor"
-        discount_value: "Valor Com Desconto"
-        main_image: "Imagem Do Produto"
-        button_text: "Texto Do Botão De Compra"
-        button_url: "Link Do Botão"
-        value_default: "Preço Padrão Do Produto"
-        value_cities: "Preço Especifico Da Cidade(s)"
-        custom_price: "Preço Para As Cidades Selecionadas"
-        review_products: "Itens Para Avaliação"
-        cities: "Cidades"
-        available_cities:  "Cidades em que está disponível"
-        states: "Estados em que está disponível"
-        button_text_hint: "Texto apresentado no botão de compra da página do produto."
-        button_url_hint: "Link para direcionamento quando do botão descrito acima."
-        main_image_hint: "A imagem será redimensionada para os tamanhos (514 × 185px e 710 × 300px)"
-        error_discount: "O valor do desconto não deve ser maior que o valor normal."
-        different_values: "Valores Diferenciados"
-        evaluation_items: "Itens Para Avaliação"
-        created_at: "Cadastrado Em"
-        updated_at: "Atualizado Em"
-      admin_user:
-        id: "Id"
-        email: "Email"
-        name: "Nome"
-        created_at: "Cadastrado Em"
-        updated_at: "Atualizado Em"
-        password: "Senha"
-        password_confirmation: "Confirmar Senha"
-        change_your_password: "Alterar Senha"
-        remember_me: "Lembrar meus dados"
-
-
   active_admin:
     dashboard: "Painel Administrativo"
     dashboard_welcome:
@@ -346,6 +294,68 @@ pt-BR:
       inactive: "Inativos"
       super_users: "Super Adminstradores"
       normal_users: "Lojas"
+
+
+    models:
+      admin_user: "Administrador"
+      category: "Categoria"
+
+      city: "Cidade"
+      state: "Estado"
+      user: "Usuário"
+      product: "Produto"
+
+    attributes:
+      admin_user:
+        id: "Id"
+        email: "Email"
+        name: "Nome"
+        password: "Senha"
+        password_confirmation: "Confirmar Senha"
+        change_your_password: "Alterar Senha"
+        remember_me: "Lembrar meus dados"
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
+      category:
+        id: "Id"
+        name: "Nome"
+        description: "Descrição"
+        main_image: "Ícone da categoria"
+
+
+      city:
+        id: "Id"
+        slug: "Slug"
+        name: "Nome"
+        state: "Estado"
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
+      product:
+        id: "Id"
+        name: "Nome"
+        description: "Descrição"
+        value: "Valor"
+        discount_value: "Valor Com Desconto"
+        main_image: "Imagem Do Produto"
+        button_text: "Texto Do Botão De Compra"
+        button_url: "Link Do Botão"
+        value_default: "Preço Padrão Do Produto"
+        value_cities: "Preço Especifico Da Cidade(s)"
+        custom_price: "Preço Para As Cidades Selecionadas"
+        review_products: "Itens Para Avaliação"
+        cities: "Cidades"
+        available_cities:  "Cidades em que está disponível"
+        states: "Estados em que está disponível"
+        button_text_hint: "Texto apresentado no botão de compra da página do produto."
+        button_url_hint: "Link para direcionamento quando do botão descrito acima."
+        main_image_hint: "A imagem será redimensionada para os tamanhos (514 × 185px e 710 × 300px)"
+        error_discount: "O valor do desconto não deve ser maior que o valor normal."
+        different_values: "Valores Diferenciados"
+        evaluation_items: "Itens Para Avaliação"
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
+
+
 
 
   product:

@@ -8,6 +8,7 @@ gem 'rails', '3.2.9'
 gem 'sqlite3'
 
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
+gem 'paperclip'
 
 
 # Gems used only for assets and not required
