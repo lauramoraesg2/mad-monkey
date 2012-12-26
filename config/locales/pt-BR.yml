@@ -242,6 +242,7 @@ pt-BR:
     models:
       admin_user: "Administrador"
       category: "Categoria"
+      offer: "Oferta"
 
       city: "Cidade"
       state: "Estado"
@@ -264,6 +265,17 @@ pt-BR:
         name: "Nome"
         description: "Descrição"
         main_image: "Ícone da categoria"
+      offer:
+        id: "Id"
+        name: "Nome"
+        description: "Descrição"
+        code: "Código"
+        active: "Ativo"
+        original_price: "Preço"
+        discount_price: "Preço com desconto"
+        technical_information: "informações Técnicas"
+        quantity_in_stock: "Estoque"
+        main_image: "Imagem"
 
 
   active_admin:

@@ -3910,3 +3910,186 @@ Served asset /active_admin/print.css - 200 OK (7ms)
 
 Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-24 08:50:41 -0200
 Served asset /active_admin/orderable.png - 200 OK (18ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2012-12-24 19:27:09 -0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (2083.8ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "categories" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (28708.3ms)
+Completed 200 OK in 30399ms (Views: 27013.9ms | ActiveRecord: 2084.8ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2012-12-24 19:27:44 -0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "categories" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (105.0ms)
+Completed 200 OK in 112ms (Views: 105.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-24 19:27:48 -0200
+Served asset /active_admin.css - 304 Not Modified (71ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-24 19:27:48 -0200
+Served asset /active_admin/print.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-24 19:27:48 -0200
+Served asset /active_admin.js - 304 Not Modified (3012ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-24 19:27:56 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (417ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2012-12-24 19:29:27 -0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (29.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (74.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "categories" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (1636.4ms)
+Completed 200 OK in 1722ms (Views: 1576.1ms | ActiveRecord: 104.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-24 19:29:31 -0200
+Served asset /active_admin.css - 304 Not Modified (710ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-26 16:41:23 -0200
+Served asset /active_admin.js - 304 Not Modified (393ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-26 16:41:23 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-26 16:41:27 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (27ms)
+Connecting to database specified by database.yml
+  [1m[36m (79.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateAdminUsers (20121222184230)
+Migrating to CreateAdminNotes (20121222184236)
+Migrating to MoveAdminNotesToComments (20121222184237)
+Migrating to CreateCategories (20121224053633)
+Migrating to CreateOffers (20121224212623)
+  [1m[35m (0.9ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (17.4ms)[0m  CREATE TABLE "offers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "code" integer, "active" boolean, "original_price" decimal, "discount_price" decimal, "technical_information" varchar(255), "quantity_in_stock" integer, "main_image_file_name" varchar(255), "main_image_content_type" varchar(255), "main_image_file_size" integer, "main_image_updated_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121224212623')[0m
+  [1m[35m (81.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2012-12-26 17:00:24 -0200
+
+NameError (uninitialized constant Offer):
+  app/admin/offers.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (33.5ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (41.5ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (303.8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2012-12-26 17:11:58 -0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (102.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "categories" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (2660.3ms)
+Completed 200 OK in 3570ms (Views: 2771.2ms | ActiveRecord: 103.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-26 17:12:02 -0200
+Served asset /active_admin.css - 304 Not Modified (313ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-26 17:12:02 -0200
+Served asset /active_admin.js - 304 Not Modified (377ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-26 17:12:03 -0200
+Served asset /active_admin/print.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-26 17:12:05 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (33ms)
+
+
+Started GET "/admin/offers" for 127.0.0.1 at 2012-12-26 17:12:07 -0200
+Processing by Admin::OffersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "offers" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (705.4ms)
+Completed 200 OK in 725ms (Views: 708.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-26 17:12:08 -0200
+Served asset /active_admin.css - 304 Not Modified (225ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-26 17:12:08 -0200
+Served asset /active_admin.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-26 17:12:08 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/offers/new" for 127.0.0.1 at 2012-12-26 17:13:05 -0200
+Processing by Admin::OffersController#new as HTML
+  [1m[35mAdminUser Load (11.0ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (1320.9ms)
+Completed 200 OK in 1747ms (Views: 1508.3ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-26 17:13:08 -0200
+Served asset /active_admin.css - 304 Not Modified (228ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-26 17:13:08 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-26 17:13:08 -0200
+Served asset /active_admin.js - 304 Not Modified (25ms)
+
+
+Started GET "/admin/offers/new" for 127.0.0.1 at 2012-12-26 17:14:49 -0200
+Processing by Admin::OffersController#new as HTML
+  [1m[36mAdminUser Load (24.7ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (1461.0ms)
+Completed 200 OK in 1878ms (Views: 1492.8ms | ActiveRecord: 24.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-26 17:14:53 -0200
+Served asset /active_admin.css - 304 Not Modified (114ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-26 17:14:53 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-26 17:14:53 -0200
+Served asset /active_admin.js - 304 Not Modified (282ms)
