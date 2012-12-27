@@ -4108,3 +4108,1077 @@ Migrating to JoinTableCategoriesOffers (20121227190918)
   [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121227190918')[0m
   [1m[35m (30.7ms)[0m  commit transaction
   [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/offers/new" for 127.0.0.1 at 2012-12-27 17:34:18 -0200
+Processing by Admin::OffersController#new as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (954.1ms)
+Completed 200 OK in 1164ms (Views: 974.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:34:20 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:34:21 -0200
+Served asset /active_admin.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:34:21 -0200
+Served asset /active_admin.css - 304 Not Modified (43ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/offers/new" for 127.0.0.1 at 2012-12-27 17:35:14 -0200
+Processing by Admin::OffersController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (1213.5ms)
+Completed 200 OK in 1522ms (Views: 1235.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:35:17 -0200
+Served asset /active_admin.css - 304 Not Modified (461ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:35:17 -0200
+Served asset /active_admin.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:35:17 -0200
+Served asset /active_admin/print.css - 304 Not Modified (9ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:35:21 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (365.0ms)
+Completed 500 Internal Server Error in 409ms
+
+ActionView::Template::Error (Could not find table 'contents'):
+    1: insert_tag renderer_for(:index)
+  activerecord (3.2.9) lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+  activerecord (3.2.9) lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+  activerecord (3.2.9) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:228:in `default'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:254:in `content_columns'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/filters/resource_extension.rb:103:in `default_content_filters'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/filters/resource_extension.rb:88:in `default_filters'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/filters/resource_extension.rb:25:in `filters'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/filters/resource_extension.rb:114:in `block in filters_sidebar_section'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/helpers/optional_display.rb:26:in `instance_exec'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/helpers/optional_display.rb:26:in `display_on?'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource/sidebars.rb:17:in `block in sidebar_sections_for'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource/sidebars.rb:17:in `select'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource/sidebars.rb:17:in `sidebar_sections_for'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:99:in `sidebar_sections_for_action'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:123:in `skip_sidebar?'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:59:in `build_page_content'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:42:in `block (2 levels) in build_page'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:18:in `div'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:39:in `block in build_page'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:38:in `build_page'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:10:in `build'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:30:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb:1:in `block in __home_laura__rvm_gems_ruby_______p____bundler_gems_active_admin_cc___d_d_____app_views_active_admin_resource_index_html_arb___451462087_89380720'
+  arbre (1.0.1) lib/arbre/context.rb:45:in `instance_eval'
+  arbre (1.0.1) lib/arbre/context.rb:45:in `initialize'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb:1:in `new'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb:1:in `__home_laura__rvm_gems_ruby_______p____bundler_gems_active_admin_cc___d_d_____app_views_active_admin_resource_index_html_arb___451462087_89380720'
+  actionpack (3.2.9) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.9) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.9) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource_controller/actions.rb:13:in `block (2 levels) in index'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:230:in `call'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:230:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:160:in `to_html'
+  responders (0.9.3) lib/responders/flash_responder.rb:104:in `to_html'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.9) lib/action_controller/metal/mime_responds.rb:239:in `respond_with'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:447:in `_run__777908706__process_action__543454046__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  rack-p3p (0.5.0) lib/rack-p3p.rb:11:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__869283264__call__990013928__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.6ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:42:07 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (350.3ms)
+Completed 500 Internal Server Error in 554ms
+
+ActionView::Template::Error (Could not find table 'contents'):
+    1: insert_tag renderer_for(:index)
+  activerecord (3.2.9) lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+  activerecord (3.2.9) lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+  activerecord (3.2.9) lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:228:in `yield'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:228:in `default'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:228:in `columns'
+  activerecord (3.2.9) lib/active_record/model_schema.rb:248:in `column_names'
+  activerecord (3.2.9) lib/active_record/relation/calculations.rb:213:in `aggregate_column'
+  activerecord (3.2.9) lib/active_record/relation/calculations.rb:356:in `build_count_subquery'
+  activerecord (3.2.9) lib/active_record/relation/calculations.rb:232:in `execute_simple_calculation'
+  activerecord (3.2.9) lib/active_record/relation/calculations.rb:208:in `perform_calculation'
+  activerecord (3.2.9) lib/active_record/relation/calculations.rb:159:in `calculate'
+  activerecord (3.2.9) lib/active_record/relation/calculations.rb:58:in `count'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/helpers/collection.rb:11:in `collection_size'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/helpers/collection.rb:19:in `collection_is_empty?'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/index.rb:43:in `items_in_collection?'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/index.rb:47:in `build_collection'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/index.rb:26:in `block in main_content'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:18:in `batch_action_form'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/index.rb:34:in `wrap_with_batch_action_form'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/index.rb:24:in `main_content'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:78:in `block (2 levels) in build_main_content_wrapper'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:18:in `div'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:77:in `block in build_main_content_wrapper'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:18:in `div'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:76:in `build_main_content_wrapper'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:60:in `block in build_page_content'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:18:in `div'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:59:in `build_page_content'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:42:in `block (2 levels) in build_page'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:18:in `div'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:39:in `block in build_page'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:38:in `build_page'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/views/pages/base.rb:10:in `build'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:30:in `block in build_tag'
+  arbre (1.0.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+  arbre (1.0.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb:1:in `block in __home_laura__rvm_gems_ruby_______p____bundler_gems_active_admin_cc___d_d_____app_views_active_admin_resource_index_html_arb___451462087_89380720'
+  arbre (1.0.1) lib/arbre/context.rb:45:in `instance_eval'
+  arbre (1.0.1) lib/arbre/context.rb:45:in `initialize'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb:1:in `new'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb:1:in `__home_laura__rvm_gems_ruby_______p____bundler_gems_active_admin_cc___d_d_____app_views_active_admin_resource_index_html_arb___451462087_89380720'
+  actionpack (3.2.9) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.9) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.9) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource_controller/actions.rb:13:in `block (2 levels) in index'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:230:in `call'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:230:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:160:in `to_html'
+  responders (0.9.3) lib/responders/flash_responder.rb:104:in `to_html'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:153:in `respond'
+  actionpack (3.2.9) lib/action_controller/metal/responder.rb:146:in `call'
+  actionpack (3.2.9) lib/action_controller/metal/mime_responds.rb:239:in `respond_with'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:7:in `index'
+  /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/lib/active_admin/resource_controller/actions.rb:11:in `index'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:447:in `_run__777908706__process_action__543454046__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  rack-p3p (0.5.0) lib/rack-p3p.rb:11:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__869283264__call__990013928__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.9ms)
+Connecting to database specified by database.yml
+  [1m[36m (71.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateAdminUsers (20121222184230)
+Migrating to CreateAdminNotes (20121222184236)
+Migrating to MoveAdminNotesToComments (20121222184237)
+Migrating to CreateCategories (20121224053633)
+Migrating to CreateOffers (20121224212623)
+Migrating to JoinTableCategoriesOffers (20121227190918)
+Migrating to CreateContents (20121227192045)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (136.1ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" varchar(255), "video_url" varchar(255), "main_image_file_name" varchar(255), "main_image_content_type" varchar(255), "main_image_file_size" integer, "main_image_updated_at" datetime, "main_image_description" varchar(255), "image2_file_name" varchar(255), "image2_content_type" varchar(255), "image2_file_size" integer, "image2_updated_at" datetime, "image2_description" varchar(255), "second_description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (42.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121227192045')[0m
+  [1m[35m (271.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:42:49 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[35mAdminUser Load (11.0ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (639.3ms)
+Completed 200 OK in 1110ms (Views: 652.2ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:42:52 -0200
+Served asset /active_admin.css - 304 Not Modified (93ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:42:52 -0200
+Served asset /active_admin.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:42:52 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:46:21 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[35mAdminUser Load (5.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (756.0ms)
+Completed 200 OK in 1038ms (Views: 758.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:46:22 -0200
+Served asset /active_admin.css - 304 Not Modified (210ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:46:23 -0200
+Served asset /active_admin.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:46:23 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents/new" for 127.0.0.1 at 2012-12-27 17:47:05 -0200
+Processing by Admin::ContentsController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (497.1ms)
+Completed 200 OK in 601ms (Views: 508.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:47:06 -0200
+Served asset /active_admin.css - 304 Not Modified (210ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:47:06 -0200
+Served asset /active_admin.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:47:06 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/contents/new" for 127.0.0.1 at 2012-12-27 17:47:47 -0200
+Processing by Admin::ContentsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (2138.8ms)
+Completed 200 OK in 2628ms (Views: 2309.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:47:50 -0200
+Served asset /active_admin.js - 304 Not Modified (406ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:47:50 -0200
+Served asset /active_admin.css - 304 Not Modified (69ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:47:50 -0200
+Served asset /active_admin/print.css - 304 Not Modified (14ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:47:55 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (476.6ms)
+Completed 200 OK in 707ms (Views: 489.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:47:56 -0200
+Served asset /active_admin.css - 304 Not Modified (236ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:47:56 -0200
+Served asset /active_admin.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:47:56 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:47:59 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (448.0ms)
+Completed 200 OK in 477ms (Views: 458.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:48:00 -0200
+Served asset /active_admin.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:48:00 -0200
+Served asset /active_admin.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:48:00 -0200
+Served asset /active_admin/print.css - 304 Not Modified (3ms)
+
+
+Started GET "/admin/contents/new" for 127.0.0.1 at 2012-12-27 17:48:06 -0200
+Processing by Admin::ContentsController#new as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (463.2ms)
+Completed 200 OK in 486ms (Views: 472.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:48:07 -0200
+Served asset /active_admin.css - 304 Not Modified (209ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:48:07 -0200
+Served asset /active_admin.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:48:07 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents/new" for 127.0.0.1 at 2012-12-27 17:49:15 -0200
+Processing by Admin::ContentsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (540.5ms)
+Completed 200 OK in 1086ms (Views: 572.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:49:17 -0200
+Served asset /active_admin.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:49:17 -0200
+Served asset /active_admin.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:49:17 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started POST "/admin/contents" for 127.0.0.1 at 2012-12-27 17:51:03 -0200
+Processing by Admin::ContentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hu21va0A0aGJOPLCe/ca6cKoarDuK4VJVulUVFf2u9M=", "content"=>{"title"=>"Novo Jogo!", "description"=>"", "video_url"=>"https://www.youtube.com/watch?v=o_bwEyr8I-M", "main_image_description"=>"", "image2_description"=>"", "second_description"=>"Jogo muito interessante.. bla bla .. "}, "commit"=>"Criar Conteúdo"}
+  [1m[35mAdminUser Load (1.7ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (452.0ms)
+Completed 200 OK in 511ms (Views: 473.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:51:04 -0200
+Served asset /active_admin.css - 304 Not Modified (81ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:51:04 -0200
+Served asset /active_admin.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:51:04 -0200
+Served asset /active_admin/print.css - 304 Not Modified (10ms)
+
+
+Started POST "/admin/contents" for 127.0.0.1 at 2012-12-27 17:51:54 -0200
+Processing by Admin::ContentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hu21va0A0aGJOPLCe/ca6cKoarDuK4VJVulUVFf2u9M=", "content"=>{"title"=>"Novo Jogo!", "description"=>"", "video_url"=>"https://www.youtube.com/watch?v=o_bwEyr8I-M", "main_image_description"=>"", "image2_description"=>"", "second_description"=>"Jogo muito interessante.. bla bla .. "}, "commit"=>"Criar Conteúdo"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (56.4ms)[0m  [1mINSERT INTO "contents" ("created_at", "description", "image2_content_type", "image2_description", "image2_file_name", "image2_file_size", "image2_updated_at", "main_image_content_type", "main_image_description", "main_image_file_name", "main_image_file_size", "main_image_updated_at", "second_description", "title", "updated_at", "video_url") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 27 Dec 2012 19:51:55 UTC +00:00], ["description", ""], ["image2_content_type", nil], ["image2_description", ""], ["image2_file_name", nil], ["image2_file_size", nil], ["image2_updated_at", nil], ["main_image_content_type", nil], ["main_image_description", ""], ["main_image_file_name", nil], ["main_image_file_size", nil], ["main_image_updated_at", nil], ["second_description", "Jogo muito interessante.. bla bla .. "], ["title", "Novo Jogo!"], ["updated_at", Thu, 27 Dec 2012 19:51:55 UTC +00:00], ["video_url", "https://www.youtube.com/watch?v=o_bwEyr8I-M"]]
+[paperclip] Saving attachments.
+  [1m[35m (46.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/contents/1
+Completed 302 Found in 547ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/contents/1" for 127.0.0.1 at 2012-12-27 17:51:56 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mContent Load (0.0ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (414.6ms)
+Completed 500 Internal Server Error in 468ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xad4e6d0>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.5ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/contents/1" for 127.0.0.1 at 2012-12-27 17:55:59 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (1092.5ms)
+Completed 500 Internal Server Error in 1591ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xb346167c>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (81.3ms)
+
+
+Started POST "/admin/contents" for 127.0.0.1 at 2012-12-27 17:56:06 -0200
+Processing by Admin::ContentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hu21va0A0aGJOPLCe/ca6cKoarDuK4VJVulUVFf2u9M=", "content"=>{"title"=>"Novo Jogo!", "description"=>"", "video_url"=>"https://www.youtube.com/watch?v=o_bwEyr8I-M", "main_image_description"=>"", "image2_description"=>"", "second_description"=>"Jogo muito interessante.. bla bla .. "}, "commit"=>"Criar Conteúdo"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (42.3ms)[0m  [1mINSERT INTO "contents" ("created_at", "description", "image2_content_type", "image2_description", "image2_file_name", "image2_file_size", "image2_updated_at", "main_image_content_type", "main_image_description", "main_image_file_name", "main_image_file_size", "main_image_updated_at", "second_description", "title", "updated_at", "video_url") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 27 Dec 2012 19:56:06 UTC +00:00], ["description", ""], ["image2_content_type", nil], ["image2_description", ""], ["image2_file_name", nil], ["image2_file_size", nil], ["image2_updated_at", nil], ["main_image_content_type", nil], ["main_image_description", ""], ["main_image_file_name", nil], ["main_image_file_size", nil], ["main_image_updated_at", nil], ["second_description", "Jogo muito interessante.. bla bla .. "], ["title", "Novo Jogo!"], ["updated_at", Thu, 27 Dec 2012 19:56:06 UTC +00:00], ["video_url", "https://www.youtube.com/watch?v=o_bwEyr8I-M"]]
+[paperclip] Saving attachments.
+  [1m[35m (76.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/contents/2
+Completed 302 Found in 181ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 17:56:06 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (354.8ms)
+Completed 500 Internal Server Error in 375ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xa2dbe50>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.2ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (70.6ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:56:13 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents" [0m
+  [1m[35mCACHE (9.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (1162.0ms)
+Completed 200 OK in 1396ms (Views: 1166.2ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:56:14 -0200
+Served asset /active_admin.css - 304 Not Modified (77ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:56:14 -0200
+Served asset /active_admin.js - 304 Not Modified (312ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:56:14 -0200
+Served asset /active_admin/print.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-27 17:56:15 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (59ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 17:56:18 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (357.5ms)
+Completed 500 Internal Server Error in 403ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xa2bf9d0>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.9ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.8ms)
+
+
+Started GET "/admin/contents/2/edit" for 127.0.0.1 at 2012-12-27 17:56:24 -0200
+Processing by Admin::ContentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mContent Load (1.4ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/edit.html.arb (857.8ms)
+Completed 200 OK in 919ms (Views: 877.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:56:25 -0200
+Served asset /active_admin.css - 304 Not Modified (85ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:56:25 -0200
+Served asset /active_admin.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:56:25 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 17:56:37 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "contents" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" ORDER BY "contents"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (461.9ms)
+Completed 200 OK in 489ms (Views: 463.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:56:37 -0200
+Served asset /active_admin.css - 304 Not Modified (269ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:56:38 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:56:38 -0200
+Served asset /active_admin.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-27 17:56:38 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 17:56:41 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (331.5ms)
+Completed 500 Internal Server Error in 360ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xa25d668>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.5ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.6ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (51.4ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 17:57:05 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (237.2ms)
+Completed 500 Internal Server Error in 773ms
+
+ActionView::Template::Error (undefined method `image2' for #<ActiveSupport::SafeBuffer:0xa96d368>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:23:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:22:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.8ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (134.8ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (176.9ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 17:57:15 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (494.9ms)
+Completed 200 OK in 824ms (Views: 517.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 17:57:17 -0200
+Served asset /active_admin.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 17:57:17 -0200
+Served asset /active_admin.js - 304 Not Modified (309ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 17:57:18 -0200
+Served asset /active_admin/print.css - 304 Not Modified (5ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 17:58:26 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (323.6ms)
+Completed 500 Internal Server Error in 530ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xa322328>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.1ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.2ms)
+
+
+Started GET "/admin/contents/2" for 127.0.0.1 at 2012-12-27 18:00:23 -0200
+Processing by Admin::ContentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mContent Load (1.9ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (369.1ms)
+Completed 500 Internal Server Error in 708ms
+
+ActionView::Template::Error (undefined method `main_image' for #<ActiveSupport::SafeBuffer:0xa297c00>):
+    1: insert_tag renderer_for(:show)
+  app/admin/contents.rb:21:in `block (4 levels) in <top (required)>'
+  app/admin/contents.rb:20:in `block (3 levels) in <top (required)>'
+  app/admin/contents.rb:15:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.2ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2012-12-27 18:00:46 -0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (3.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories" 
+  [1m[36mCACHE (0.7ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "categories" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (899.1ms)
+Completed 200 OK in 969ms (Views: 926.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 18:00:47 -0200
+Served asset /active_admin.css - 304 Not Modified (382ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 18:00:48 -0200
+Served asset /active_admin/print.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 18:00:48 -0200
+Served asset /active_admin.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-27 18:00:49 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/categories/2" for 127.0.0.1 at 2012-12-27 18:00:50 -0200
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/show.html.arb (285.7ms)
+Completed 200 OK in 322ms (Views: 309.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 18:00:51 -0200
+Served asset /active_admin.css - 304 Not Modified (332ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 18:00:51 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 18:00:51 -0200
+Served asset /active_admin.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/category/2/images/main_icon.jpg?1356332448" for 127.0.0.1 at 2012-12-27 18:00:51 -0200
+Served asset /category/2/images/main_icon.jpg - 404 Not Found (37ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/category/2/images/main_icon.jpg"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/category/2/images/main_icon.jpg?1356332448" for 127.0.0.1 at 2012-12-27 18:00:52 -0200
+Served asset /category/2/images/main_icon.jpg - 404 Not Found (34ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/category/2/images/main_icon.jpg"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/laura/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/admin/offers" for 127.0.0.1 at 2012-12-27 18:01:01 -0200
+Processing by Admin::OffersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "offers" LIMIT 30 OFFSET 0) subquery_for_count 
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (772.9ms)
+Completed 200 OK in 801ms (Views: 777.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:02 -0200
+Served asset /active_admin.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 18:01:02 -0200
+Served asset /active_admin.js - 304 Not Modified (168ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:02 -0200
+Served asset /active_admin/print.css - 304 Not Modified (5ms)
+
+
+Started GET "/admin/offers/new" for 127.0.0.1 at 2012-12-27 18:01:06 -0200
+Processing by Admin::OffersController#new as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/new.html.arb (552.1ms)
+Completed 200 OK in 644ms (Views: 561.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:06 -0200
+Served asset /active_admin.css - 304 Not Modified (250ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 18:01:07 -0200
+Served asset /active_admin.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:07 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents" for 127.0.0.1 at 2012-12-27 18:01:17 -0200
+Processing by Admin::ContentsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (9.7ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "contents" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents" ORDER BY "contents"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/index.html.arb (516.7ms)
+Completed 200 OK in 548ms (Views: 524.2ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:17 -0200
+Served asset /active_admin.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:17 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 18:01:17 -0200
+Served asset /active_admin.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-12-27 18:01:18 -0200
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/contents/2/edit" for 127.0.0.1 at 2012-12-27 18:01:36 -0200
+Processing by Admin::ContentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" WHERE "contents"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered /home/laura/.rvm/gems/ruby-1.9.3-p327/bundler/gems/active_admin-cc687d7d1615/app/views/active_admin/resource/edit.html.arb (513.2ms)
+Completed 200 OK in 547ms (Views: 525.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:37 -0200
+Served asset /active_admin.css - 304 Not Modified (198ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-12-27 18:01:37 -0200
+Served asset /active_admin.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-12-27 18:01:37 -0200
+Served asset /active_admin/print.css - 304 Not Modified (0ms)

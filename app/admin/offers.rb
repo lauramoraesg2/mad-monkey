@@ -27,7 +27,7 @@ ActiveAdmin.register Offer do
       row :technical_information
       row :quantity_in_stock
       row :main_image do
-        image_tag(offer.main_image.url(:icon))
+        image_tag(offer.main_image.url(thumb))
       end
       row :created_at
       row :updated_at

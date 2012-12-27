@@ -8,6 +8,6 @@ class Category < ActiveRecord::Base
 
   has_attached_file :main_image,
                     :styles => {:icon => "16x16>"},
-                    :url => "/assets/categories/:id/images/main_:style.:extension",
-                    :path => ":rails_root/public/assets/categories/:id/images/main_:style.:extension"
+                    :url => "/assets/category/:id/images/main_:style.:extension",
+                    :path => ":rails_root/public/assets/category/:id/images/main_:style.:extension"
 end

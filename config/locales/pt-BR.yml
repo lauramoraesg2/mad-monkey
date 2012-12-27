@@ -242,6 +242,7 @@ pt-BR:
       admin_user: "Administrador"
       category: "Categoria"
       offer: "Oferta"
+      content: "Conteúdo"
 
       city: "Cidade"
       state: "Estado"
@@ -272,9 +273,19 @@ pt-BR:
         active: "Ativo"
         original_price: "Preço"
         discount_price: "Preço com desconto"
-        technical_information: "informações Técnicas"
+        technical_information: "informações técnicas"
         quantity_in_stock: "Estoque"
         main_image: "Imagem"
+      content:
+        id: "Id"
+        title: "Título"
+        description: "Descrição"
+        video_url: "URL do vídeo"
+        main_image: "Imagem"
+        main_image_description: "Descrição da imagem"
+        image2: "Imagem 2"
+        image2_description: "Descrição da imagem 2"
+        second_descrition: "Continuação da descrição"
 
 
   active_admin:
