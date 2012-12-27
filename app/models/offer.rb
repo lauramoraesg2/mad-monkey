@@ -1,6 +1,8 @@
 class Offer < ActiveRecord::Base
   # attr_accessible :title, :body
 
+  has_many :categories
+
   #TODO: COLOCAR ATIVO COMO PADRÃO
   #TODO: SEMPRE Q CADASTRAR UMA NOVA OFERTA, ELA ESTÁ ATIVA, PARA DESATIVÁ-LA,
   #É NECESSÁRIO ENTRAR NELA DE NOVO OU COLOCAR NAS AÇÕES DO LADO, DE TODA FORMA,

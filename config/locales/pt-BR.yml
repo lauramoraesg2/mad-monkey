@@ -4,7 +4,6 @@
 # encoding: UTF-8
 # pt-BR translations for Ruby on Rails
 
-#TODO: NÃO ESTÁ PEGANDO AS TRADUÇÕES
 pt-BR:
   # formatos de data e hora
   date:
