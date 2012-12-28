@@ -4,6 +4,8 @@ class Content < ActiveRecord::Base
   #TODO SE TIVER DESCRICAO DA IMAGEM, TEM Q TER a imagem (ambas)
   #TODO TEM Q TER PELO MENOS UMA DESCRIÇÃO
 
+  has_many :categories
+
   validates_presence_of :title
 
   has_attached_file :main_image,

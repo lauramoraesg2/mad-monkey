@@ -72,6 +72,6 @@ module MadMonkey
 
     config.i18n.locale = :'pt-BR'
     config.i18n.default_locale = :'pt-BR'
-    config.middleware.insert_before ActionDispatch::Session::CookieStore, Rack::P3p
+    #config.middleware.insert_before ActionDispatch::Session::CookieStore, Rack::P3p
   end
 end

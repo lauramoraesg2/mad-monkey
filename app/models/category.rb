@@ -1,7 +1,10 @@
 class Category < ActiveRecord::Base
   # attr_accessible :title, :body
 
+  #TODO VER SE PRECISA LIMITAR O TAMANHO, FORMATO DA IMAGEM (EM TODOS OS MODEL)
+
   has_many :offers
+  has_many :contents
 
   validates_presence_of :name
   validates_attachment_presence :main_image
