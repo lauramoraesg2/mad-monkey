@@ -9,7 +9,6 @@ class Offer < ActiveRecord::Base
   #TEM ISSO DE DESATIVAR NAS AÇÕES NO NETSABE ECOMMERCE
 
   #TODO: ACHO QUE A QUANTIDADE EM ESTOQUE NÃO PODE SER 0 (zero)
-  #TODO: PREÇO DE DESCONTO NÃO PODE SER MAIOR QUE PREÇO NORMAL
   #TODO: MUDAR DECIMAIS (COLOKR CASAS DPS DA VIRGULA, ETC)
   #TODO: TEM Q TER PELO MENOS 2 TAMANHOS DE IAMGENS (1 PRA MINIATURAS E OUTRA PRO DETALHE DA OFERTA)
 
@@ -17,6 +16,10 @@ class Offer < ActiveRecord::Base
   validates_attachment_presence :main_image
 
   validates_numericality_of :code, :original_price, :discount_price, :quantity_in_stock
+
+  validates_each :discount_price do |record, attr, original_price|
+    record.errors.add(attr, I18n.t('activerecord.attributes.offer.error_discount')) if (original_price.present? and record.original_price.present? and original_price.to_f > record.original_price.to_f)
+  end
 
   has_attached_file :main_image,
                     :styles => {:thumb => "100x100>"},

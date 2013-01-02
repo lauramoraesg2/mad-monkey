@@ -9,11 +9,13 @@ class Topic < ActiveRecord::Base
   validates_presence_of :title
 
   #validates_each :main_image do |record, attr, main_image_description|
-  #  record.errors.add(attr, I18n.t('activerecord.attributes.topic.error_empty_image')) if (main_image_description.present? and record.main_image_description.present? and main_image_description.to_f > record.main_image_description.to_f)
+  #  record.errors.add(attr, I18n.t('activerecord.attributes.topic.error_empty_image')) if (main_image_description.present? and record.main_image_description.present?)
   #end
+  #
+  ##TODO SE TIVER DESCRICAO DA IMAGEM, TEM Q TER a imagem (ambas)  -  n tah funcionando
+  #validates_presence_of :main_image, :if => Proc.new { |topic| topic.main_image_description.present? }
 
-  #TODO SE TIVER DESCRICAO DA IMAGEM, TEM Q TER a imagem (ambas)  -  n tah funcionando
-  validates_presence_of :main_image, :if => Proc.new { |topic| topic.main_image_description.present? }
+  validates_presence_of :description, :if => Proc.new { |topic| topic.main_image_description.present? }
 
   has_attached_file :main_image,
                     :styles => {:thumb => "100x100>"},

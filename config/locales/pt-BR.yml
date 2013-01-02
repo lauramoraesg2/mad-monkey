@@ -286,7 +286,7 @@ pt-BR:
         main_image_description: "Descrição da imagem"
         image2: "Imagem 2"
         image2_description: "Descrição da imagem 2"
-        second_descrition: "Continuação da descrição"
+        second_description: "Continuação da descrição"
         created_at: "Cadastrado Em"
         updated_at: "Atualizado Em"
 
