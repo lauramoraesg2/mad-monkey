@@ -244,8 +244,8 @@ pt-BR:
       admin_user: "Administrador"
       category: "Categoria"
       offer: "Oferta"
-      topic: "Tópicos"
-    atributes:
+      topic: "Tópico"
+    attributes:
       admin_user:
         id: "Id"
         email: "Email"
@@ -276,6 +276,7 @@ pt-BR:
         main_image: "Imagem"
         created_at: "Cadastrado Em"
         updated_at: "Atualizado Em"
+        error_discount: "O valor do desconto não deve ser maior que o valor normal."
       topic:
         id: "Id"
         title: "Título"
