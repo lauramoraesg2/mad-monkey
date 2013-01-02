@@ -4,7 +4,7 @@ class Category < ActiveRecord::Base
   #TODO VER SE PRECISA LIMITAR O TAMANHO, FORMATO DA IMAGEM (EM TODOS OS MODEL)
 
   has_many :offers
-  has_many :contents
+  has_many :topics
 
   validates_presence_of :name
   validates_attachment_presence :main_image

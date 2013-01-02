@@ -1,12 +1,8 @@
 ActiveAdmin.register Offer do
 
-  #TODO: ACHO QUE A QUANTIDADE EM ESTOQUE NÃO PODE SER 0 (zero)
-  #TODO: PREÇO DE DESCONTO NÃO PODE SER MAIOR QUE PREÇO NORMAL
-  #TODO: MUDAR DECIMAIS (COLOKR CASAS DPS DA VIRGULA, ETC)
-
   filter :name
   filter :code
-  #TODO FAZER FILTRO POR PREÇO? COM INTERVALO DE PREÇO
+  #TODO FAZER FILTRO POR PREÇO? COM INTERVALO DE PREÇO ?
 
   index do
     column :id
@@ -27,7 +23,7 @@ ActiveAdmin.register Offer do
       row :technical_information
       row :quantity_in_stock
       row :main_image do
-        image_tag(offer.main_image.url(thumb))
+        image_tag(offer.main_image.url(:thumb))
       end
       row :created_at
       row :updated_at
