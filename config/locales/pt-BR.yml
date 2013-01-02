@@ -4,6 +4,8 @@
 # encoding: UTF-8
 # pt-BR translations for Ruby on Rails
 
+#TODO N TAH PEGANDO A DROGA DAS TRADUCOES (SÓ DA PARTE ESPECÍFICA E CADA UM)
+
 pt-BR:
   # formatos de data e hora
   date:
@@ -242,13 +244,7 @@ pt-BR:
       admin_user: "Administrador"
       category: "Categoria"
       offer: "Oferta"
-      content: "Conteúdo"
-
-      city: "Cidade"
-      state: "Estado"
-      user: "Usuário"
-      product: "Produto"
-
+      topic: "Tópicos"
     atributes:
       admin_user:
         id: "Id"
@@ -265,6 +261,8 @@ pt-BR:
         name: "Nome"
         description: "Descrição"
         main_image: "Ícone da categoria"
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
       offer:
         id: "Id"
         name: "Nome"
@@ -276,7 +274,9 @@ pt-BR:
         technical_information: "informações técnicas"
         quantity_in_stock: "Estoque"
         main_image: "Imagem"
-      content:
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
+      topic:
         id: "Id"
         title: "Título"
         description: "Descrição"
@@ -286,7 +286,8 @@ pt-BR:
         image2: "Imagem 2"
         image2_description: "Descrição da imagem 2"
         second_descrition: "Continuação da descrição"
-
+        created_at: "Cadastrado Em"
+        updated_at: "Atualizado Em"
 
   active_admin:
     dashboard: "Painel Administrativo"
