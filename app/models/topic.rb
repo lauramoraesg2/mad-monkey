@@ -2,7 +2,6 @@ class Topic < ActiveRecord::Base
   # attr_accessible :title, :body
 
   #TODO TEM Q TER PELO MENOS UMA DESCRIÇÃO
-  #TODO OLHAR TAMANHO ADEQUADO PARA IMAGENS AQUI
 
   has_many :categories
 
@@ -18,7 +17,7 @@ class Topic < ActiveRecord::Base
   validates_presence_of :description, :if => Proc.new { |topic| topic.main_image_description.present? }
 
   has_attached_file :main_image,
-                    :styles => {:thumb => "100x100>"},
+                    :styles => {:thumb => "100x100>", :medium => "212x149#"},
                     :url => "/assets/topic/:id/images/main_:style.:extension",
                     :path => ":rails_root/public/assets/topic/:id/images/main_:style.:extension"
 

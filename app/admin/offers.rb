@@ -2,10 +2,9 @@ ActiveAdmin.register Offer do
 
   filter :name
   filter :code
-  #TODO FAZER FILTRO POR PREÇO? COM INTERVALO DE PREÇO ?
 
   index do
-    column :id
+    column :code
     column :name
     column :active
     default_actions
@@ -13,14 +12,13 @@ ActiveAdmin.register Offer do
 
   show do
     attributes_table do
-      row :id
-      row :name
-      row :description
       row :code
       row :active
+      row :name
+      row :description
+      row :technical_information
       row :original_price
       row :discount_price
-      row :technical_information
       row :quantity_in_stock
       row :main_image do
         image_tag(offer.main_image.url(:thumb))
@@ -32,16 +30,21 @@ ActiveAdmin.register Offer do
 
   form do |f|
     f.inputs I18n.t("activerecord.models.offer"), :multipart => true do
+      f.input :code
       f.input :name
       f.input :description, :as => :text, :input_html => {:rows => 4}
-      f.input :code
-      f.input :active
+      f.input :technical_information, :as => :text, :input_html => {:rows => 4}
       f.input :original_price
       f.input :discount_price
-      f.input :technical_information, :as => :text, :input_html => {:rows => 4}
       f.input :quantity_in_stock
       f.input :main_image
     end
+
+    #TODO COLOCAR A QUAIS CATEGORIAS A OFERTA ESTÁ RELACIONADA
+    #f.inputs I18n.t("activerecord.attributes.offer.related_categories"), :multipart => true do
+    #    f.input :categories, :as => :check_boxes, :collection => Category.all
+    #end
+
     f.actions
   end
   

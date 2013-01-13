@@ -22,3 +22,7 @@
 /config/database.yml
 
 /public/assets/
+
+/log/development.log
+/tmp/pids/server.pid
+/.idea/workspace.xml
